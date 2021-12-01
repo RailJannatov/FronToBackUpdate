@@ -15,5 +15,9 @@ namespace FrontToBack.ViewModels
         public List<AboutList> AboutLists { get; set; }
         public Subscribe Subscribe { get; set; }
         public SubscribeImage SubscribeImage { get; set; }
+        public List<Category> Categories   { get; set; }
+        public List<Product> Products { get; set; }
+        public ExpertTitle ExpertTitle { get; set; }
+        public List<ExpertItem> ExpertItems { get; set; }
     }
 }

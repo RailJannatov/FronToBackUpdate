@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rail\\Desktop\\nefronttoback\\FrontToBack\\FrontToBack.csproj": {}
+    "C:\\Users\\Rail\\Desktop\\FronToBackUpdate\\FrontToBack\\FrontToBack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rail\\Desktop\\nefronttoback\\FrontToBack\\FrontToBack.csproj": {
+    "C:\\Users\\Rail\\Desktop\\FronToBackUpdate\\FrontToBack\\FrontToBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rail\\Desktop\\nefronttoback\\FrontToBack\\FrontToBack.csproj",
+        "projectUniqueName": "C:\\Users\\Rail\\Desktop\\FronToBackUpdate\\FrontToBack\\FrontToBack.csproj",
         "projectName": "FrontToBack",
-        "projectPath": "C:\\Users\\Rail\\Desktop\\nefronttoback\\FrontToBack\\FrontToBack.csproj",
+        "projectPath": "C:\\Users\\Rail\\Desktop\\FronToBackUpdate\\FrontToBack\\FrontToBack.csproj",
         "packagesPath": "C:\\Users\\Rail\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rail\\Desktop\\nefronttoback\\FrontToBack\\obj\\",
+        "outputPath": "C:\\Users\\Rail\\Desktop\\FronToBackUpdate\\FrontToBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rail\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.12, )"

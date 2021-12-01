@@ -1,7 +1,26 @@
 $(document).ready(function () {
+    var skip = 4;
+  
+  
+      
+        $(window).scroll(function () {
+            if ($(window).scrollTop() ==
+                $(document).height() - $(window).height()) {
+                    $.ajax({
+                        type: "GET",
+                        url: "/Product/Load?skip=" + skip,
+                        success: function (res) {
 
-    // HEADER
+                            $("body").append(res);
+                            skip += 4;
 
+                       
+                        }
+                    });
+            }
+        });
+  
+    });
     $(document).on('click', '#search', function () {
         $(this).next().toggle();
     })

@@ -24,6 +24,10 @@ namespace FrontToBack.Controllers
             var aboutImage = _dbcontext.AboutImage.SingleOrDefault();
             var subscribe = _dbcontext.Subscribe.FirstOrDefault();
             var subscribeImage = _dbcontext.SubscribeImage.FirstOrDefault();
+            var category = _dbcontext.Categories.ToList();
+            var product = _dbcontext.Products.ToList();
+            var expertTitle = _dbcontext.ExpertTitle.SingleOrDefault();
+            var expertItems = _dbcontext.ExpertItems.ToList();
 
 
             return View(new HomeViewModel
@@ -34,9 +38,11 @@ namespace FrontToBack.Controllers
                 AboutImage = aboutImage,
                 AboutLists = aboutList,
                 Subscribe = subscribe,
-                SubscribeImage = subscribeImage
-
-
+                SubscribeImage = subscribeImage,
+                Categories = category,
+                Products = product,
+                ExpertTitle = expertTitle,
+                ExpertItems = expertItems
             }
             );
             ;

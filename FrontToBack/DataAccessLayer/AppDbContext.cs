@@ -23,7 +23,11 @@ namespace FrontToBack.DataAccessLayer
 
         public DbSet<Subscribe> Subscribe { get; set; }
         public DbSet<SubscribeImage> SubscribeImage { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ExpertTitle> ExpertTitle { get; set; }
+        public DbSet<ExpertItem> ExpertItems { get; set; }
 
     }
 }
